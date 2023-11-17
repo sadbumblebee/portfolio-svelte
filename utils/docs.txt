@@ -1,0 +1,13 @@
+These are simple commandline scripts for handling the image conversions.
+Maybe this would be better as a makefile, but whatever here we are.
+
+For gif => webp, something like:
+gif2webp colorado.gif -o colorado_river.webp
+
+For small images, something like:
+mogrify -format jpg -resize 350x197 -quality 80 -path ./small *.jpg
+
+For large images, something like:
+mogrify -format jpg -resize 700x394 -quality 80 -path ./retina *.jpg 2x_*.jpg
+
+Thanks
