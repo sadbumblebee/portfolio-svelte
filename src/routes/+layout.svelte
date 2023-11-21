@@ -16,7 +16,6 @@
 
 <svelte:head>
   <title>Daniel Wolfe, data journalist</title>
-  <description>Hey there metadata, nice to be a little preview text here. Whether this little card is in Slack or Twitter, I'm happy to be here 👋.</description>
   <meta property="og:image" content="/images/social-card.jpg">
   <meta property="og:url" content="https://www.sadbumblebee.com">
   <meta property="og:title" content="Daniel Wolfe, data journalist">
