@@ -7,7 +7,6 @@ import Card from '$lib/components/Card.svelte'
 import { projectData } from '$lib/data/projects.js'
 import { monthNames } from '$lib/data/months.js'
 import { flip } from "svelte/animate";
-console.log(projectData)
 
 const RSS_URL = `https://www.washingtonpost.com/arcio/rss/author/Daniel-Wolfe/`;
 
