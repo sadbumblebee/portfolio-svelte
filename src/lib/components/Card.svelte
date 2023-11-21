@@ -7,6 +7,7 @@
     export let url;
     export let selectedCategories;
     export let skillsets;
+    export let annotation;
 
     // console.log('Inside card:', skillsets)
 
@@ -17,10 +18,10 @@
     // Create an empty array
     // If there are selected categories
     // Then show specific skills to those categories
+
     if (selectedCategories.length > 0) {
         console.log(skillsets)
         for (const skill in skillsets) {
-            console.log(skill, console.log(selectedCategories))
             arr = selectedCategories.includes(skill) ? [...arr, ...skillsets[skill]] : [...arr];
         }
     }
@@ -35,10 +36,15 @@
         <h3>{hed}</h3>
         <figure>
             <img
+                alt={`a social share image for the story: ${hed}.`}
                 srcset={`/images/${image} 1x, /images/2x_${image} 2x`}
                 src={`/images/${image}`}
             />
+            {#if annotation}
+            <p class="awarded">%</p>
+            {/if}
         </figure>
+        
     </div>
     <!-- Awards annotation -->
     <!-- HED -->
@@ -100,6 +106,17 @@
                 width: 100%;
                 object-fit: cover;
             }
+            .awarded {
+                font-family: "Webdings";
+                font-size: 44px;
+                margin: unset;
+                position: absolute;
+                padding: 0 2px 2px 0;
+                bottom: 0;
+                right: 0;
+                color: $secondary;
+                text-align: right;
+        }
         }
     }
 

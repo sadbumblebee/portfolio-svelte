@@ -37,11 +37,8 @@ const strDateToDateObj = (str) => {
 
 const handleCategoryClick = (e) => {
     let clickedCategory = e.target.innerText;
-    console.log('What existed before:', selectedCategories)
-    console.log('What has been clicked:', clickedCategory)
     // If the clicked category is already in the list
     if (selectedCategories.includes(clickedCategory)) {
-        console.log('it already includes it')
         selectedCategories = selectedCategories.filter(s => s !== clickedCategory);
     // If it doesn't exist in category, add it to categories
     } else {
