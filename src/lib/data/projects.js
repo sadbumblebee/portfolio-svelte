@@ -86,7 +86,7 @@ export const projectData = [
 		ann_url:
 			'https://snd.org/best-of-design-competitions/snd44-annual-creative-competition-results/',
 		url: 'https://www.washingtonpost.com/world/interactive/2022/world-population-8-billion/',
-		copy: 'Using United Nations population estimates to show how you stack up to your eigh billion neighbors.',
+		copy: 'Using United Nations population estimates to show how you stack up to your eight billion neighbors.',
 		categories: ['Reporting', 'Visuals', 'Mapping', 'Data'],
 		skillsets: {
 			Visuals: ['React', 'Canvas'],

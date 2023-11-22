@@ -41,7 +41,7 @@
                 src={`/images/${image}`}
             />
             {#if annotation}
-            <p class="awarded">%</p>
+            <p class="awarded">🏅</p>
             {/if}
         </figure>
         
