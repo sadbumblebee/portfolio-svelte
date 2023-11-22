@@ -26,10 +26,21 @@ header {
 figure {
     width: fit-content;
     margin: 20px 0 0 0;
+    :hover {
+        animation: .1s linear infinite alternate vibrate;
+    }
+}
+
+@keyframes vibrate {
+    from {
+        transform: translateX(1.5px);
+    }
+    to {
+        transform: translateX(-1.5px);
+    }
 }
 
 .head-container {
-    pointer-events: none;
     margin: 0 auto;
     max-width: $super-column;
     display: flex;
@@ -43,6 +54,7 @@ figure {
     }
     .head-container {
         justify-content: center;
+        pointer-events: none;
     }
     figure {
         margin: 50px 0 0 0;
