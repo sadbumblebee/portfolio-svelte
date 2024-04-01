@@ -4,7 +4,7 @@
     <hr />
     <ul class="links">
         <li>
-            <a href="https://www.twitter.com/sadbumblebee" rel="noreferrer" target="_blank">Twitter</a>
+            <a href="https://bsky.app/profile/sadbumblebee.buzz" rel="noreferrer" target="_blank">Bluesky</a>
         </li>
         <li>
             <a href="https://www.github.com/sadbumblebee" rel="noreferrer" target="_blank">Github</a>
