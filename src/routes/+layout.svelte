@@ -19,7 +19,7 @@
   <meta property="og:image" content="/images/social-card.jpg">
   <meta property="og:url" content="https://www.sadbumblebee.com">
   <meta property="og:title" content="Daniel Wolfe, data journalist">
-  <meta property="og:description" content="Hey there metadata, nice to be a little preview text here. Whether this little card is in Slack or Twitter, I'm happy to be here 👋.">
+  <meta property="og:description" content="Hey there metadata, nice to be a little preview text here. Whether this little card is in Slack or Discord, I'm happy to be here 👋.">
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400,500" rel="stylesheet">
 </svelte:head>
