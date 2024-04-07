@@ -28,7 +28,7 @@ export const talksData = [
 		date: 'March 2024'
 	},
 	{
-		title: 'False Color for the Rest of Us',
+		title: 'False color for the rest of us',
 		desc: "Visualizing raster data usually means more bands, more problems. With availability of multi- and hyper-spectral imagery, just how do we represent the data to a casual audience at first glance? We'll learn novel techniques to show change over time in night sky data, flooding extents with SAR, and land subsidence with InSAR.",
 		event: 'NACIS',
 		links: [

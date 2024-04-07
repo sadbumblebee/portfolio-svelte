@@ -24,6 +24,7 @@ header {
 }
 
 figure {
+    pointer-events: visible;
     width: fit-content;
     margin: 20px 0 0 0;
     :hover {
@@ -46,6 +47,7 @@ figure {
     display: flex;
     align-items: end;
     justify-content: end;
+    pointer-events: none;
 }
 
 @media all and (max-width: $column) {

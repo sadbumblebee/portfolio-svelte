@@ -1,20 +1,9 @@
 <script>
 // @ts-nocheck
-import { talksData } from '$lib/data/talks.js'
+// import { talksData } from '$lib/data/talks.js'
+export let data;
 
-const displayEmoji = (type) => {
-    let emoji;
-    if (type == "Audio") {
-        emoji = "🔊"
-    } else if (type == "Slides") {
-        emoji = "🪪"
-    } else if (type == "Video") {
-        emoji = "📼"
-    } else {
-        emoji = ""
-    }
-    return emoji;
-}
+const slugify = (str) => { return `./talks/${str.toLowerCase().split(' ').join('-')}` }
 
 </script>
 
@@ -23,25 +12,11 @@ const displayEmoji = (type) => {
 <h1>Previous talks</h1>
 <p>When possible I've linked to slides, audio and video from my past events.</p>
 <ul>
-{#each talksData as talk}
+{#each data.talks['talksData'] as talk}
     <li class="talk-container">
         <div class="talk-title">
-            <h4>{talk.title}</h4>
+            <a href={slugify(talk.title)}><h4>{talk.title}</h4></a>
             <p class="event">{talk.event}</p>
-        </div>
-        <div class="talk-details">
-                <p class="talk-links">
-                    {#each talk.links as link}
-                    <span>
-                        <a href={link.url} target="_blank"><span class="emoji">{displayEmoji(link.type)} </span>{link.type}</a>
-                    </span>
-                    {/each}
-                </p>
-                <p class="talk-date">{talk.date}</p>
-        </div>
-        <div class="talk-info">
-            <p class="talk-desc">“{talk.desc}”</p>
-            
         </div>
     </li>
 {/each}
@@ -70,6 +45,20 @@ li {
     list-style-type: none; // Remove bullet points
     h4 {
         font-size: 1.5em;
+        font-weight: 300;
+        &::after {
+            position: absolute;
+            color: $tertiary;
+            content: '👉';
+            font-family: $emoji;
+            left: -65px;
+            opacity: 0;
+            transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        &:hover::after {
+            opacity: 1;
+            left: -35px;
+        }
     }
     p {
         font-size: 1.2em;
@@ -78,17 +67,6 @@ li {
 
 .talk-container {
     margin: 8px 0;
-    &::after {
-        content: "* * *";
-        display: block;
-        color: $secondary;
-        font-size: .75em;
-        letter-spacing: .5em;
-        text-align: center;
-    }
-    &:last-child:after {
-        display: none;
-    }
 }
 
 .talk-title {
@@ -96,6 +74,12 @@ li {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    a {
+        color: $primary;
+        &:hover {
+            color: $secondary;
+        }
+    }
     h4 {
         margin: 0;
     }
@@ -154,6 +138,16 @@ li {
 .disclaimer {
     background-color: $secondary;
     padding: 6px;
+}
+
+@media all and (max-width: $column) {
+    li {
+            h4 {
+            &::after {
+                content: "";
+            }
+        }
+    }
 }
 
 </style>
