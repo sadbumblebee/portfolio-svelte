@@ -9,8 +9,6 @@
     export let skillsets;
     export let annotation;
 
-    // console.log('Inside card:', skillsets)
-
     // 
     $: arr = []
     $: selectedCategories, arr = []
@@ -20,7 +18,6 @@
     // Then show specific skills to those categories
 
     if (selectedCategories.length > 0) {
-        console.log(skillsets)
         for (const skill in skillsets) {
             arr = selectedCategories.includes(skill) ? [...arr, ...skillsets[skill]] : [...arr];
         }
