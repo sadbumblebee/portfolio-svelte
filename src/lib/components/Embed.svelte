@@ -23,9 +23,12 @@
 </script>
 
 <div class="embed">
-    <p>
-        <span class="emoji">{displayEmoji(type)} </span>
-    </p>
+    <div class="embed-label">
+        <p>
+            {type} 
+        </p>
+        <span class="emoji">{displayEmoji(type)}</span>
+    </div>
     {#if type == "Video"}
     <div class="video-wrapper">
         <iframe width="560" height="315" src={`https://www.youtube.com/embed/${makeYoutubeShareUrl(url)}?si=X0fj19T1cl89Pj8V`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -33,11 +36,10 @@
     {:else if type == "Audio"}
         <figure class="audio">
         <audio controls src={url}></audio>
-        <figcaption>Listen to the talk</figcaption>
         </figure>
     {:else if type == "Slides"}
-        <object data="https://resources.ire.org/tipsheets/20240307-30414.pdf" type="application/pdf" width="100%" height="400px">
-            <embed src="https://resources.ire.org/tipsheets/20240307-30414.pdf" type="application/pdf" />
+        <object title="Slides from the talk" data="{url}" type="application/pdf" width="100%" height="400px">
+            <embed src="{url}" type="application/pdf" />
         </object>
     {:else}
         <p>Resource not found :c</p>
@@ -47,22 +49,30 @@
 
 <style lang="scss">
 .embed {
-    p {
-            font-size: 1.75em;
+    margin: 12px 0 0 0;
+    .embed-label {
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5em;
+        p {
             margin: 0;
             text-align: center;
             color: $primary;
         }
-    span { // simple separator for lists
-        &.emoji {
-            font-size: 2em;
-            font-family: $emoji;
-            color: $primary;
-            font-optical-sizing: auto;
-            font-weight: 700;
-            font-style: normal;
+        span { // simple separator for lists
+            font-family: $sans;
+            &.emoji {
+                // font-size: 1.5em;
+                font-family: $emoji;
+                color: $primary;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+            }
         }
     }
+    
 }
 .audio {
     margin: 8px 0 0 0;

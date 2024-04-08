@@ -3,6 +3,8 @@
 
     let crumbs;
 
+    console.log("crumb", path)
+
     $: {
         // Remove zero-length tokens.
         const tokens = path.split('/').filter((t) => t !== '');
