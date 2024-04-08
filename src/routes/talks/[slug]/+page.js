@@ -1,8 +1,6 @@
-// TK wrap this in a try/catch
 export async function load({ params }) {
-	// Get talks data
-	const response = await fetch(`/api/talks`);
-	const talks = await response.json();
+	const talks = await import(`$lib/data/talks.js`);
+
 	// Get the current slug
 	const slug = params.slug;
 
