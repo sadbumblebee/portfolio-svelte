@@ -1,6 +1,32 @@
 export const projectData = [
 	{
-		hed: 'Water is running out in Gaza. It will mean more deaths.',
+		hed: 'A surprising byproduct of wildfires: Contaminated drinking water',
+		image: 'wildfire-water.jpg',
+		date: 'July 2024',
+		source: 'Washington Post',
+		url: 'https://www.washingtonpost.com/climate-environment/interactive/2024/wildfire-drinking-water-supply-danger/',
+		copy: 'While a wildfire might directly impact a few hundred residents, its secondary impacts to the clean water supply could affect thousands.',
+		categories: ['Reporting', 'Visuals', 'Mapping'],
+		skillsets: {
+			Visuals: ['ai2html'],
+			Mapping: ['QGIS', 'Pandas']
+		}
+	},
+	{
+		hed: 'The mysterious tyranny of trendy baby names',
+		image: 'baby-names.jpg',
+		date: 'June 2024',
+		source: 'Washington Post',
+		url: 'https://www.washingtonpost.com/business/interactive/2024/baby-names-trendy-suffixes/',
+		copy: 'Why is every other kid these days named Mason, Grayson or Carson? We mined America’s biggest baby-name database to find the surprising answer.',
+		categories: ['Reporting', 'Visuals', 'Data'],
+		skillsets: {
+			Visuals: ['ai2html', 'd3'],
+			Data: ['Pandas']
+		}
+	},
+	{
+		hed: 'Water is running out in Gaza. It will mean more deaths',
 		image: 'cleanwater-gaza.jpg',
 		date: 'November 2023',
 		source: 'Washington Post',
