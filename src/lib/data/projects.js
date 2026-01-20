@@ -1,5 +1,6 @@
 export const projectData = [
 	{
+<<<<<<< HEAD
 		hed: 'It took 20 years, but I granted my dad his last wish',
 		image: 'dad.jpg',
 		date: 'December 2025',
@@ -65,23 +66,37 @@ export const projectData = [
 	{
 		hed: 'A surprising byproduct of wildfires: Contaminated drinking water',
 		image: 'cleanwater.jpg',
+=======
+		hed: 'A surprising byproduct of wildfires: Contaminated drinking water',
+		image: 'wildfire-water.jpg',
+>>>>>>> 9a62e95c0aeab94b02243888e49cb09d3408509e
 		date: 'July 2024',
 		source: 'Washington Post',
 		url: 'https://www.washingtonpost.com/climate-environment/interactive/2024/wildfire-drinking-water-supply-danger/',
 		copy: 'While a wildfire might directly impact a few hundred residents, its secondary impacts to the clean water supply could affect thousands.',
 		categories: ['Reporting', 'Visuals', 'Mapping'],
 		skillsets: {
+<<<<<<< HEAD
 			Visuals: ['ai2html', 'React'],
 			Mapping: ['QGIS', 'Python']
+=======
+			Visuals: ['ai2html'],
+			Mapping: ['QGIS', 'Pandas']
+>>>>>>> 9a62e95c0aeab94b02243888e49cb09d3408509e
 		}
 	},
 	{
 		hed: 'The mysterious tyranny of trendy baby names',
+<<<<<<< HEAD
 		image: 'babynames.jpg',
+=======
+		image: 'baby-names.jpg',
+>>>>>>> 9a62e95c0aeab94b02243888e49cb09d3408509e
 		date: 'June 2024',
 		source: 'Washington Post',
 		url: 'https://www.washingtonpost.com/business/interactive/2024/baby-names-trendy-suffixes/',
 		copy: 'Why is every other kid these days named Mason, Grayson or Carson? We mined America’s biggest baby-name database to find the surprising answer.',
+<<<<<<< HEAD
 		categories: ['Reporting', 'Visuals', 'Mapping'],
 		skillsets: {
 			Visuals: ['ai2html', 'Motion', 'React'],
@@ -98,11 +113,20 @@ export const projectData = [
 		categories: ['Reporting', 'Visuals', 'Data'],
 		skillsets: {
 			Visuals: ['ai2html', 'Motion', 'React'],
+=======
+		categories: ['Reporting', 'Visuals', 'Data'],
+		skillsets: {
+			Visuals: ['ai2html', 'd3'],
+>>>>>>> 9a62e95c0aeab94b02243888e49cb09d3408509e
 			Data: ['Pandas']
 		}
 	},
 	{
+<<<<<<< HEAD
 		hed: 'Water is running out in Gaza. It will mean more deaths.',
+=======
+		hed: 'Water is running out in Gaza. It will mean more deaths',
+>>>>>>> 9a62e95c0aeab94b02243888e49cb09d3408509e
 		image: 'cleanwater-gaza.jpg',
 		date: 'November 2023',
 		source: 'Washington Post',
