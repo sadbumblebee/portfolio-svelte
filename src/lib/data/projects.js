@@ -5,7 +5,7 @@ export const projectData = [
 		date: 'December 2025',
 		source: 'Washington Post',
 		url: 'https://www.washingtonpost.com/sports/2025/12/25/tour-de-tucson-dying-wish/',
-		copy: 'When I found out my dad’s last wish was for his family to ride in El Tour de Tucson, I took up the challenge.',
+		copy: 'When I found out my dad’s last wish was for his family to ride in El Tour de Tucson, I took up the challenge. ',
 		categories: ['Reporting'],
 		skillsets: {}
 	},
