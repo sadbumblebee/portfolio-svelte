@@ -10,4 +10,7 @@ mogrify -format jpg -resize 350x197 -quality 80 -path ./small *.jpg
 For large images, something like:
 mogrify -format jpg -resize 700x394 -quality 80 -path ./retina *.jpg 2x_*.jpg
 
+Renaming could be like:
+for file in *.jpg; do mv "$file" "2x_$file"; done
+
 Thanks

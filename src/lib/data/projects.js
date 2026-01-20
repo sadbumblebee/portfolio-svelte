@@ -1,5 +1,107 @@
 export const projectData = [
 	{
+		hed: 'It took 20 years, but I granted my dad his last wish',
+		image: 'dad.jpg',
+		date: 'December 2025',
+		source: 'Washington Post',
+		url: 'https://www.washingtonpost.com/sports/2025/12/25/tour-de-tucson-dying-wish/',
+		copy: 'When I found out my dad’s last wish was for his family to ride in El Tour de Tucson, I took up the challenge.',
+		categories: ['Reporting'],
+		skillsets: {}
+	},
+	{
+		hed: 'ICE detainees face greater risk from extreme heat than most prisoners',
+		image: 'iceheat.jpg',
+		date: 'October 2025',
+		source: 'Washington Post',
+		url: 'https://www.washingtonpost.com/climate-environment/interactive/2025/ice-detention-extreme-heat/',
+		copy: 'A Washington Post analysis found that ICE detention centers experience an average of 29 days of dangerous heat per year.',
+		categories: ['Reporting', 'Visuals', 'Mapping', 'Data'],
+		skillsets: {
+			Visuals: ['ai2html', 'React'],
+			Data: ['Pandas', 'R'],
+			Mapping: ['QGIS', 'MapLibre', 'Observable']
+		}
+	},
+	{
+		hed: 'Painting with fire: How Indigenous practices can help protect forests',
+		image: 'culturalburning.jpg',
+		date: 'October 2025',
+		source: 'Washington Post',
+		url: 'https://www.washingtonpost.com/climate-solutions/interactive/2025/tribes-cultural-burning-california-wildfires/',
+		copy: 'The Post followed cultural burning practices, an Indigenous tradition now permitted under California law and used to help protect forests from wildfires.',
+		categories: ['Reporting', 'Visuals', 'Mapping'],
+		skillsets: {
+			Visuals: ['ai2html'],
+			Mapping: ['QGIS', 'Python']
+		}
+	},
+	{
+		hed: 'Camp Mystic’s leader got a ‘life threatening’ flood alert. They evacuated an hour later.',
+		image: 'campmystic.jpg',
+		date: 'July 2025',
+		source: 'Washington Post',
+		url: 'https://www.washingtonpost.com/nation/interactive/2025/camp-mystic-alerts-texas-floods/',
+		copy: 'More than an hour passed between Camp Mystic receiving a severe flood warning and a decision to evacuate young campers asleep in cabins by the Guadalupe River.',
+		categories: ['Reporting', 'Visuals', 'Mapping'],
+		skillsets: {
+			Visuals: ['ai2html', 'React'],
+			Mapping: ['QGIS', 'MapLibre']
+		}
+	},
+	{
+		hed: 'See where your flights will experience this climate-fueled turbulence',
+		image: 'turbulence.webp',
+		date: 'June 2025',
+		source: 'Washington Post',
+		url: 'https://www.washingtonpost.com/climate-environment/interactive/2025/see-where-your-flights-will-experience-this-climate-fueled-turbulence/',
+		copy: 'See how major flight routes in the U.S. could be affected by climate change-driven turbulence.',
+		categories: ['Reporting', 'Visuals', 'Mapping'],
+		skillsets: {
+			Visuals: ['ai2html', 'React'],
+			Mapping: ['QGIS', 'Python', 'MapLibre']
+		}
+	},
+	{
+		hed: 'A surprising byproduct of wildfires: Contaminated drinking water',
+		image: 'cleanwater.jpg',
+		date: 'July 2024',
+		source: 'Washington Post',
+		url: 'https://www.washingtonpost.com/climate-environment/interactive/2024/wildfire-drinking-water-supply-danger/',
+		copy: 'While a wildfire might directly impact a few hundred residents, its secondary impacts to the clean water supply could affect thousands.',
+		categories: ['Reporting', 'Visuals', 'Mapping'],
+		skillsets: {
+			Visuals: ['ai2html', 'React'],
+			Mapping: ['QGIS', 'Python']
+		}
+	},
+	{
+		hed: 'The mysterious tyranny of trendy baby names',
+		image: 'babynames.jpg',
+		date: 'June 2024',
+		source: 'Washington Post',
+		url: 'https://www.washingtonpost.com/business/interactive/2024/baby-names-trendy-suffixes/',
+		copy: 'Why is every other kid these days named Mason, Grayson or Carson? We mined America’s biggest baby-name database to find the surprising answer.',
+		categories: ['Reporting', 'Visuals', 'Mapping'],
+		skillsets: {
+			Visuals: ['ai2html', 'Motion', 'React'],
+			Data: ['Pandas']
+		}
+	},
+	{
+		hed: 'Can you tell which of these breakup texts are AI-generated?',
+		image: 'breakuptexts.jpg',
+		date: 'February 2024',
+		source: 'Washington Post',
+		url: 'https://www.washingtonpost.com/technology/interactive/2024/ai-chatbot-breakup-text-quiz/',
+		copy: 'Is automation coming for our relationships?',
+		categories: ['Reporting', 'Visuals', 'Data'],
+		skillsets: {
+			Visuals: ['ai2html', 'Motion', 'React'],
+			Data: ['Pandas']
+		}
+	},
+	{
 		hed: 'Water is running out in Gaza. It will mean more deaths.',
 		image: 'cleanwater-gaza.jpg',
 		date: 'November 2023',
@@ -73,7 +175,7 @@ export const projectData = [
 		copy: 'A look into what the evening sky hold for us as mega-constellations begin to cloud low Earth orbit.',
 		categories: ['Reporting', 'Visuals', 'Mapping'],
 		skillsets: {
-			Visuals: ['React', 'ai2html', 'Framer motion'],
+			Visuals: ['React', 'ai2html', 'Motion'],
 			Mapping: ['Canvas', 'd3']
 		}
 	},
